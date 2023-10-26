@@ -19,7 +19,7 @@ const MenuProps = {
       width: 260,
     },
   },
-};
+};  
 
 const ShowProducts = ({filter,data}:filterProps) => {
 
@@ -42,7 +42,7 @@ const ShowProducts = ({filter,data}:filterProps) => {
               <div className='d-flex align-items-center justify-content-between product'>
                   <div className='total-products'>
                     <p>
-                      <span>200 </span>  
+                      <span  style={{color:"#00A9FF"}}>200  </span>  
                       products found
                     </p>
                   </div>

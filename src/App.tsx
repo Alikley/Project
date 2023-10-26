@@ -9,6 +9,7 @@ import Shop from "./components/pages/shop/Shop";
 import Product from "./components/pages/shop/Product";
 import Products from "./components/pages/shop/Products";
 import Cart from "./components/pages/shop/Cart";
+import Checkout from "./components/pages/shop/Checkout";
 
 
 
@@ -23,6 +24,8 @@ function App() {
        <Route  path='/Shop' element={<Shop  />} />
        <Route  path='/products' element={<Products  />} />
        <Route  path='/cart' element={<Cart  />} />
+       <Route  path='/checkout' element={<Checkout  />} />
+
 
 
        <Route  path="/products/:id" element={<Product />} />

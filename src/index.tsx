@@ -8,7 +8,6 @@ import { BrowserRouter } from 'react-router-dom';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import "react-multi-carousel/lib/styles.css";
 
-import { ShoppingCartProvider } from './context/ShopingCartContext';
 import { Provider } from 'react-redux';
 import store from './components/redux/store';
 
@@ -21,7 +20,6 @@ root.render(
       <BrowserRouter>
       <LoginProvider>
         <Provider store={store}>
-
           <App />
         </Provider>
       </LoginProvider>

@@ -6,6 +6,7 @@ import { useState,useEffect } from 'react';
 import ShowProducts from './ShowProducts';
 // https://preview.colorlib.com/#essence
 export interface CardItemType{
+  qty: number;
   id:number;
   category:string
   description:string;

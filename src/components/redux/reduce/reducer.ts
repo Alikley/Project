@@ -10,7 +10,7 @@ const reduce = (state = cart, action: CartAction) => {
       const exist = state.find((x) => x.id === product.id);
       if (exist) {
         return state.map((x) =>
-          x.id === product.id ? { ...x, qty: x.amount + 1 } : x
+          x.id === product.id ? { ...x, qty: x.qty + 1 } : x
         );
       } else {
         return [
@@ -24,11 +24,11 @@ const reduce = (state = cart, action: CartAction) => {
       
     case ActionTypes.DELITEM:
       const exist1 = state.find((x) => x.id === product.id);
-      if (exist1 && exist1.amount === 1) {
+      if (exist1 && exist1.qty === 1) {
         return state.filter((x) => x.id !== exist1.id);
       } else {
         return state.map((x) =>
-          x.id === product.id ? { ...x, qty: x.amount - 1 } : x
+          x.id === product.id ? { ...x, qty: x.qty - 1 } : x
         );
       }
 

@@ -98,9 +98,12 @@ const state = useSelector((state:any)=> state.reduce)
               </NavLink>
             }
           
-             <Button  style={{width:"3rem" , height:"3rem",position:"relative"}} variant='outline-primary' className='rounded-circle  '><FiShoppingCart />
-            <div className="rounded-circle bg-danger justify-content-center 
-            d-flex align-items-center" style={{color:"white", width:"1.5rem",height:"1.5rem",
+             <Button  style={{width:"3rem" , height:"3rem",position:"relative"}} variant='dark' className='rounded-circle '><NavLink to="/cart">
+             <FiShoppingCart color='#Fff' fontSize="20px" />
+              
+              </NavLink>
+            <div className="rounded-circle bg-white justify-content-center 
+            d-flex align-items-center" style={{color:"#000", width:"1.5rem",height:"1.5rem",
             position:"absolute",bottom:0,right:0,transform:"translate(25%,25%)"}}>
               ({state.length})
               </div>

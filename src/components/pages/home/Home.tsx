@@ -4,7 +4,6 @@ import Carousel from "react-multi-carousel";
 import { Image } from 'react-bootstrap'
 import storeitems from '../../../data/items.json'
 import { formatCurrency } from '../../../utilities/formatCurrency';
-import { useShopingCart } from '../../../context/ShopingCartContext';
 
 
 const responsive = {
@@ -27,8 +26,6 @@ const responsive = {
 
 
 const Home = () => {
-  const {getItemQuantity,increaseCartQuantity,decreaseCartQuantity,removeFromCart} = useShopingCart()
-  const quantity = storeitems.map(item => getItemQuantity(item.id));
   
   return (
     <div className='home'>
@@ -100,7 +97,7 @@ const Home = () => {
         </Row>
       </Container>
 
-        <div className='crousel-item'>
+        {/* <div className='crousel-item'>
               <Carousel
               ssr
               partialVisbile
@@ -149,7 +146,7 @@ const Home = () => {
                 );
               })}
             </Carousel>
-        </div>
+        </div> */}
 
 
 

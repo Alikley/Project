@@ -39,7 +39,6 @@ const ShowProducts = ({filter,data}:filterProps) => {
 
   return (
     <div>
-        
               <div className='d-flex align-items-center justify-content-between product'>
                   <div className='total-products'>
                     <p>
@@ -76,20 +75,20 @@ const ShowProducts = ({filter,data}:filterProps) => {
             const {id,image,price,title} = product
             return(
                 <>
-                <div className="col-md-3 mb-4">
-                        <Card className=' h-100 text-center p-4' key={id}>
-                            <Card.Img variant="top" src={image} alt={title} height="250px"/>
-                            <Card.Body>
-                                <Card.Title className='mb-0'>{title.substring(0,12)}...</Card.Title>
-                                <Card.Text className='lead fw-bold'>
-                                    {formatCurrency(price)}
-                                </Card.Text>
-                                <NavLink   className='btn btn-outline-dark'  to={`/products/${product.id}`}>
-                                     Buy Now
-                                </NavLink>
-                            </Card.Body>
-                        </Card>
-                </div>
+                  <div className="col-md-3 mb-4">
+                          <Card className=' h-100 text-center p-4' key={id}>
+                              <Card.Img variant="top" src={image} alt={title} height="250px"/>
+                              <Card.Body>
+                                  <Card.Title className='mb-0'>{title.substring(0,12)}...</Card.Title>
+                                  <Card.Text className='lead fw-bold'>
+                                      {formatCurrency(price)}
+                                  </Card.Text>
+                                  <NavLink   className='btn btn-outline-dark'  to={`/products/${product.id}`}>
+                                      Buy Now
+                                  </NavLink>
+                              </Card.Body>
+                          </Card>
+                  </div>
                 </>
             )
           })}

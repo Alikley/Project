@@ -4,6 +4,7 @@ import { useDispatch } from 'react-redux';
 import { addCart } from '../../redux/action/action';
 import { useParams } from 'react-router';
 import { NavLink } from 'react-router-dom';
+import  LinearProgress  from '@mui/material/LinearProgress';
 
 const Product = () => {
 
@@ -28,8 +29,17 @@ const Product = () => {
 
     
 
+    const Loading = () => {
+        return(
+          <>
+            <LinearProgress />
+          </>
+        )
+      }
+      
         return(
             <>
+            {loading ? <Loading /> :  
             <Container className='py-5'>
                 <Row className='py-4'>
                 <div className="col-md-6">
@@ -60,7 +70,7 @@ const Product = () => {
                 </div>
                 </Row>
             </Container>
-                
+            }
             </>
         )
 

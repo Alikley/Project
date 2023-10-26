@@ -1,6 +1,5 @@
 import  './scss/storeItems.scss'
 import { Container, Row} from 'react-bootstrap';
-
 import  LinearProgress  from '@mui/material/LinearProgress';
 import { useState,useEffect } from 'react';
 import ShowProducts from './ShowProducts';

@@ -25,7 +25,7 @@ const Product = () => {
             setLoading(false);
         }
         getProduct();
-    }, []);
+    }, [id]);
 
     
 

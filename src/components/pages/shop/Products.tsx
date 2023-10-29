@@ -1,5 +1,5 @@
 import  './scss/storeItems.scss'
-import { Container, Row} from 'react-bootstrap';
+import { Col, Container, Row} from 'react-bootstrap';
 import  LinearProgress  from '@mui/material/LinearProgress';
 import { useState,useEffect } from 'react';
 import ShowProducts from './ShowProducts';
@@ -58,7 +58,9 @@ const Products  = () => {
     <div className='storeItems'>
       <Container className='my-5 py-5'>
         <Row className='justify-content-center' >
-          {loading ? <Loading /> : <ShowProducts filter={filter}  data={data} />}
+          <Col>
+            {loading ? <Loading /> : <ShowProducts filter={filter}  data={data} />}
+          </Col>
         </Row>
       </Container>
     </div>

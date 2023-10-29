@@ -33,7 +33,7 @@ const state = useSelector((state:any)=> state.reduce)
                     Product Details
                 </NavDropdown.Item>
                 <NavDropdown.Divider />
-                <NavDropdown.Item to="/" as={NavLink} style={{textDecoration:"none",background:"#fff",color:"#000"}}>
+                <NavDropdown.Item to="/checkout" as={NavLink} style={{textDecoration:"none",background:"#fff",color:"#000"}}>
                     Checkout
                 </NavDropdown.Item>
             </NavDropdown>

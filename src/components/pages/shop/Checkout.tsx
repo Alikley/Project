@@ -186,10 +186,10 @@ const Checkout = () => {
                                 <span>$59.90</span>
                                 </li>
                         </ul>
-                        <Accordion defaultActiveKey="0">
+                        <Accordion defaultActiveKey="0" style={{position:"relative"}}>
                             <Accordion.Item eventKey="0">
-                                <Accordion.Header><li style={{listStyle:"circle"}}>paypal</li></Accordion.Header>
-                                <Accordion.Body>
+                                <Accordion.Header ><li style={{listStyle:"circle"}}>paypal</li></Accordion.Header>
+                                <Accordion.Body >
                                 Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
                                 eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad
                                 minim veniam, quis nostrud exercitation ullamco laboris nisi ut
@@ -245,7 +245,7 @@ const Checkout = () => {
                         <br />
                         <br />
 
-                        <Button type='submit' disabled={!isDirty || !isValid} >Click me</Button>
+                        <Button type='submit' disabled={!isDirty || !isValid} className='btn-chec'>Click me</Button>
                     </div>
                 </Col>
 
